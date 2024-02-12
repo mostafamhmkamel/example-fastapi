@@ -1,6 +1,6 @@
 from logging.config import fileConfig
 
-#alembic revision -m "create post table" 
+#alembic revision -m "create post table"  -- this code is to create revisions
 
 from sqlalchemy import engine_from_config
 from sqlalchemy import pool

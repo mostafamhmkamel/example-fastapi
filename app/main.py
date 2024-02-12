@@ -8,7 +8,25 @@ from app.models import *
 from app.database import engine
 from app.routers import user, post, auth, vote
 
+# you should add all required libraries to a txt file using the following command:
+# python -m pip freeze > requirements.txt
 
+# to install all the libraries in the requirements.txt file, use python -m pip install -r requirements.txt
+
+# to initialize git --> git init
+
+# then to add everythinjg you already have into git --> git add --all
+
+# if it is your first time using git, you have to give your git email and username 
+# by writing --> git config --global user.email email
+# and --> git config --global user.name username
+
+# when making changes in git
+# write git add --all
+# then to commit changes git commit -m "message"
+# then git push origin main
+
+#then setting main branch --> git branch -M main
 
 #responsible for creating tables in 'models.py' by connecting with database using 'engine'
 #this should only create tables that don't already exist
@@ -50,3 +68,6 @@ def index():
 
 #ctrl + C to type things in terminal after using uvicorn
 
+# for heroku --> use heroku login
+# then heroku create appname
+# no longer free
