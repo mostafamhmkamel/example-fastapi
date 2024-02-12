@@ -12,7 +12,7 @@ from app.config import settings
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
 config = context.config
-config.set_main_option("sqlalchemy.url", f'postgresql+psycopg2://{settings.database_username}:{settings.database_password}@localhost:5432/fastapi') #overriding sqlalchemy url
+config.set_main_option("sqlalchemy.url", f'postgresql+psycopg2://{settings.database_username}:{settings.database_password}@{settings.database_hostname}:5432/{settings.database_name}') #overriding sqlalchemy url
 
 # Interpret the config file for Python logging.
 # This line sets up loggers basically.
